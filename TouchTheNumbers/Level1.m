@@ -39,7 +39,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     // Inicializa variaveis do cronometro
     self.mseconds = 0;
     self.seconds = 0;
