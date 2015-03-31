@@ -15,7 +15,7 @@
 		33BD58141AC34681007A2C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33BD58121AC34681007A2C3C /* LaunchScreen.xib */; };
 		33BD58201AC34681007A2C3C /* TouchTheNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD581F1AC34681007A2C3C /* TouchTheNumbersTests.m */; };
 		33BD582B1AC3485E007A2C3C /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD582A1AC3485E007A2C3C /* Level1.m */; };
-		93A902A41ACB2A950024AB02 /* William Tell Overture Finale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93A902A31ACB2A950024AB02 /* William Tell Overture Finale.mp3 */; };
+		93A902A81ACB33BB0024AB02 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 93A902A71ACB33BB0024AB02 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		33BD581F1AC34681007A2C3C /* TouchTheNumbersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTheNumbersTests.m; sourceTree = "<group>"; };
 		33BD58291AC3485E007A2C3C /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		33BD582A1AC3485E007A2C3C /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level1.m; sourceTree = "<group>"; };
-		93A902A31ACB2A950024AB02 /* William Tell Overture Finale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "William Tell Overture Finale.mp3"; sourceTree = "<group>"; };
+		93A902A71ACB33BB0024AB02 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = ../../../Downloads/Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		33BD58021AC34681007A2C3C /* TouchTheNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				93A902A21ACB2A950024AB02 /* Sounds */,
+				93A902A71ACB33BB0024AB02 /* Sounds */,
 				33BD58071AC34681007A2C3C /* AppDelegate.h */,
 				33BD58081AC34681007A2C3C /* AppDelegate.m */,
 				33BD580A1AC34681007A2C3C /* ViewController.h */,
@@ -125,15 +125,6 @@
 				33BD581E1AC34681007A2C3C /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		93A902A21ACB2A950024AB02 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				93A902A31ACB2A950024AB02 /* William Tell Overture Finale.mp3 */,
-			);
-			name = Sounds;
-			path = ../../../Downloads/Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +210,7 @@
 			files = (
 				33BD580F1AC34681007A2C3C /* Main.storyboard in Resources */,
 				33BD58141AC34681007A2C3C /* LaunchScreen.xib in Resources */,
-				93A902A41ACB2A950024AB02 /* William Tell Overture Finale.mp3 in Resources */,
+				93A902A81ACB33BB0024AB02 /* Sounds in Resources */,
 				33BD58111AC34681007A2C3C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
