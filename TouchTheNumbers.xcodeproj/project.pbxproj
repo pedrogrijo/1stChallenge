@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		33BD58201AC34681007A2C3C /* TouchTheNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD581F1AC34681007A2C3C /* TouchTheNumbersTests.m */; };
 		93A902F41ACB34B80024AB02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A902E61ACB34B80024AB02 /* AppDelegate.m */; };
-		93A902F51ACB34B80024AB02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A902E71ACB34B80024AB02 /* LaunchScreen.xib */; };
-		93A902F61ACB34B80024AB02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A902E91ACB34B80024AB02 /* Main.storyboard */; };
 		93A902F71ACB34B80024AB02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A902EB1ACB34B80024AB02 /* Images.xcassets */; };
-		93A902F81ACB34B80024AB02 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93A902EC1ACB34B80024AB02 /* Info.plist */; };
 		93A902F91ACB34B80024AB02 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A902EE1ACB34B80024AB02 /* Level1.m */; };
 		93A902FA1ACB34B80024AB02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A902EF1ACB34B80024AB02 /* main.m */; };
 		93A902FB1ACB34B80024AB02 /* William Tell Overture Finale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93A902F11ACB34B80024AB02 /* William Tell Overture Finale.mp3 */; };
@@ -39,7 +36,6 @@
 		93A902E81ACB34B80024AB02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		93A902EA1ACB34B80024AB02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93A902EB1ACB34B80024AB02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		93A902EC1ACB34B80024AB02 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A902ED1ACB34B80024AB02 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		93A902EE1ACB34B80024AB02 /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level1.m; sourceTree = "<group>"; };
 		93A902EF1ACB34B80024AB02 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,18 +100,17 @@
 		93A902E41ACB34B80024AB02 /* TouchTheNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				93A902F01ACB34B80024AB02 /* Sounds */,
 				93A902E51ACB34B80024AB02 /* AppDelegate.h */,
 				93A902E61ACB34B80024AB02 /* AppDelegate.m */,
-				93A902E71ACB34B80024AB02 /* LaunchScreen.xib */,
-				93A902E91ACB34B80024AB02 /* Main.storyboard */,
-				93A902EB1ACB34B80024AB02 /* Images.xcassets */,
-				93A902EC1ACB34B80024AB02 /* Info.plist */,
-				93A902ED1ACB34B80024AB02 /* Level1.h */,
-				93A902EE1ACB34B80024AB02 /* Level1.m */,
 				93A902EF1ACB34B80024AB02 /* main.m */,
-				93A902F01ACB34B80024AB02 /* Sounds */,
 				93A902F21ACB34B80024AB02 /* ViewController.h */,
 				93A902F31ACB34B80024AB02 /* ViewController.m */,
+				93A902ED1ACB34B80024AB02 /* Level1.h */,
+				93A902EE1ACB34B80024AB02 /* Level1.m */,
+				93A902EB1ACB34B80024AB02 /* Images.xcassets */,
+				93A902E91ACB34B80024AB02 /* Main.storyboard */,
+				93A902E71ACB34B80024AB02 /* LaunchScreen.xib */,
 			);
 			path = TouchTheNumbers;
 			sourceTree = "<group>";
@@ -209,11 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A902F81ACB34B80024AB02 /* Info.plist in Resources */,
 				93A902F71ACB34B80024AB02 /* Images.xcassets in Resources */,
-				93A902F51ACB34B80024AB02 /* LaunchScreen.xib in Resources */,
 				93A902FB1ACB34B80024AB02 /* William Tell Overture Finale.mp3 in Resources */,
-				93A902F61ACB34B80024AB02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
