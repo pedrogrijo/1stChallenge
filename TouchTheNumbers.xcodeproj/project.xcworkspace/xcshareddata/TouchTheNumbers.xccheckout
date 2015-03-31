@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>45D64E45-FEB7-482E-B28C-4F8770C79F0F</string>
+	<string>562A9DA7-4D9C-4A3E-BDFA-B5AE8BC2E1C4</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TouchTheNumbers</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -18,7 +18,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>877197FAF710C896DC75EDB93396C5AE149F437B</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/PedroGrijo/1stChallenge.git</string>
@@ -34,7 +34,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>877197FAF710C896DC75EDB93396C5AE149F437B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>1stChallenge</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>877197FAF710C896DC75EDB93396C5AE149F437B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TouchTheNumbersBeta</string>
 		</dict>
 	</array>
 </dict>
