@@ -8,6 +8,7 @@
 
 #import "Level1.h"
 #import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface Level1 ()
 
@@ -24,6 +25,7 @@
 @property (nonatomic) int seconds;
 @property (nonatomic) int minutes;
 
+@property (nonatomic) AVAudioPlayer *background;
 @end
 
 @implementation Level1
@@ -59,10 +61,16 @@
         [button setTitle:[self.array objectAtIndex:button.tag] forState:UIControlStateNormal];
     }
     counter = 1;
+   
+    NSString *path = [NSString stringWithFormat:@"%@/William Tell Overture Finale.mp3", [[NSBundle mainBundle] resourcePath]];
     
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
     
-    //commit
+    self.background = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
+    [self.background play];
+    
+        
 }
 
 
@@ -124,6 +132,9 @@
         
         [self.countWatchTimer invalidate];
         
+        [self.countWatchTimer invalidate];
+        [self.background pause];
+        [self.background setCurrentTime: 0];
     }
 }
 
