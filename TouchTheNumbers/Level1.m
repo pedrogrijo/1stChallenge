@@ -39,6 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // somm cracra
     // Inicializa variaveis do cronometro
     self.mseconds = 0;
     self.seconds = 0;
