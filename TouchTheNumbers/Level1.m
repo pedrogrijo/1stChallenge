@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *watchTimer;
 @property (weak, nonatomic) IBOutlet UILabel *counterLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UILabel *labelNextNumber;
 
 @property (nonatomic) int mseconds;
 @property (nonatomic) int seconds;
@@ -101,7 +102,7 @@
     }
     
     // Imprime o horário após os incrementos realizados.
-    self.watchTimer.text = [NSString stringWithFormat:@"%02i:%02i:%02i", self.minutes, self.seconds, self.mseconds];
+    self.watchTimer.text = [NSString stringWithFormat:@"%02i:%02i:%03i", self.minutes, self.seconds, self.mseconds];
 }
 
 - (IBAction)button:(UIButton *)sender {
@@ -127,9 +128,33 @@
         for(UIButton *button in self.buttons)
             [button setHidden:YES];
         
+       
+       // [self.labelNextNumber.hidden = YES];
         [self.countWatchTimer invalidate];
-      //  [self.background pause];
-        [self.background setCurrentTime: 0];
+        [self.background stop];
+        
+        
+        UIAlertView *myAlert = [[UIAlertView alloc]
+                                initWithTitle:@"x9 migué"
+                                message:@""
+                                delegate:self
+                                cancelButtonTitle:nil
+                                otherButtonTitles:@"ok", nil];
+        myAlert.cancelButtonIndex = -1;
+        [myAlert setTag:1000];
+        [myAlert show];
+        
+        
+        
+        
+     /*   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ROFL"
+                                                        message:@"Dee dee doo doo."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:@"return", nil];
+        [alert show]; */
+        
+        
     }
 }
 
