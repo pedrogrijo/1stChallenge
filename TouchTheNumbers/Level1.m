@@ -14,11 +14,11 @@
 @property NSMutableArray* array;
 @property int counter;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
-@property (weak, nonatomic) IBOutlet UILabel *labelUau;
+
 @property (strong, nonatomic) NSTimer *countWatchTimer;
 @property (weak, nonatomic) IBOutlet UILabel *watchTimer;
 @property (weak, nonatomic) IBOutlet UILabel *counterLabel;
-
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @property (nonatomic) int mseconds;
 @property (nonatomic) int seconds;
@@ -47,10 +47,8 @@
     // Inicializa o cronometro chamando o método updateTimer
     self.countWatchTimer = [NSTimer scheduledTimerWithTimeInterval:1.0/100.0 target: self selector:@selector(updateTimer) userInfo: nil repeats: YES];
     
-    
     // Inicializa variaveis
     clickable = TRUE;
-    _labelUau.hidden = YES;
     
     /** Nesse trecho será gerado uma MutableArray que serão embaralhados via o método shuffle para ser usado na posição dos botões **/
     self.array = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12" , @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21",@"22", @"23", @"24", @"25", nil];
@@ -59,6 +57,7 @@
     for (UIButton *button in self.buttons) {
         [button setTitle:[self.array objectAtIndex:button.tag] forState:UIControlStateNormal];
     }
+    
     counter = 1;
    
     NSString *path = [NSString stringWithFormat:@"%@/William Tell Overture Finale.mp3", [[NSBundle mainBundle] resourcePath]];
@@ -69,7 +68,16 @@
     
     [self.background play];
     
+    self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"level1Background.png"]];
+    [self.backgroundImage setFrame: CGRectMake ( 0.0f, 0.0f, 620.0f, 680.0f)];
+    [self.view addSubview: self.backgroundImage];
         
+}
+
+- (IBAction)returnAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    [self.background stop];
 }
 
 
@@ -109,14 +117,6 @@
             self.counter++;
             
             self.counterLabel.text = [NSString stringWithFormat:@"%d", counter];
-            
-            /* codigo de teste de mudança de cor de botões
-            [self.teste setBackgroundColor:[UIColor whiteColor]];
-            [self.teste.layer setBorderColor:[[UIColor redColor] CGColor]];
-            [self.teste.layer setBorderWidth:1.0f];
-            self.teste.enabled = NO;
-             
-            [self.teste setBackgroundImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal]; */
     
         }
     }
@@ -127,12 +127,8 @@
         for(UIButton *button in self.buttons)
             [button setHidden:YES];
         
-        _labelUau.hidden = NO;
-        
         [self.countWatchTimer invalidate];
-        
-        [self.countWatchTimer invalidate];
-        [self.background pause];
+      //  [self.background pause];
         [self.background setCurrentTime: 0];
     }
 }
