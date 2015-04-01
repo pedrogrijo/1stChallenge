@@ -128,8 +128,7 @@
             [button setHidden:YES];
         
         [self.countWatchTimer invalidate];
-      //  [self.background pause];
-        [self.background setCurrentTime: 0];
+        [self.background stop];
     }
 }
 
