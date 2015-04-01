@@ -132,6 +132,7 @@
        // [self.labelNextNumber.hidden = YES];
         [self.countWatchTimer invalidate];
         [self.background stop];
+<<<<<<< HEAD
         
         
         UIAlertView *myAlert = [[UIAlertView alloc]
@@ -155,6 +156,8 @@
         [alert show]; */
         
         
+=======
+>>>>>>> f0d72ac422e1005cb4cd164b73f2655960ed8f3a
     }
 }
 

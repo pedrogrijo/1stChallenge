@@ -24,17 +24,15 @@
     [btnLayer setMasksToBounds:YES];
     [btnLayer setCornerRadius:5.0f]; */
     
-
-    
-    self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"startBackground.png"]];
+   /* self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"startBackground.png"]];
     [self.backgroundImage setFrame: CGRectMake ( 0.0f, 0.0f, 375.0f, 680.0f)];
-    [self.view addSubview: self.backgroundImage]; 
+    [self.view addSubview: self.backgroundImage]; */
     
-    self.buttonStart.layer.shadowColor = [UIColor blackColor].CGColor;
+   /* self.buttonStart.layer.shadowColor = [UIColor blackColor].CGColor;
     self.buttonStart.layer.shadowOffset = CGSizeMake(15.0f,15.0f);
     self.buttonStart.layer.masksToBounds = NO;
     self.buttonStart.layer.shadowRadius = 5.0f;
-    self.buttonStart.layer.shadowOpacity = 1.0;
+    self.buttonStart.layer.shadowOpacity = 1.0;*/
     
     // Do any additional setup after loading the view, typically from a nib.
 }
