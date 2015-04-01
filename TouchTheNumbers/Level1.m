@@ -7,7 +7,6 @@
 //
 
 #import "Level1.h"
-#import <QuartzCore/QuartzCore.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface Level1 ()
