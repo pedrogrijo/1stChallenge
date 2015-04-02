@@ -20,10 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   /* CALayer *btnLayer = [self.buttonStart layer];
-    [btnLayer setMasksToBounds:YES];
-    [btnLayer setCornerRadius:5.0f]; */
-    
    /* self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"startBackground.png"]];
     [self.backgroundImage setFrame: CGRectMake ( 0.0f, 0.0f, 375.0f, 680.0f)];
     [self.view addSubview: self.backgroundImage]; */

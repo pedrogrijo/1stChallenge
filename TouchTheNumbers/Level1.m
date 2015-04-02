@@ -58,9 +58,12 @@
     for (UIButton *button in self.buttons) {
         [button setTitle:[self.array objectAtIndex:button.tag] forState:UIControlStateNormal];
     }
-    
+    // Contator auxiliar.
     counter = 1;
    
+    
+    // Trecho do código responsável por fazer com que a música toque.
+    
     NSString *path = [NSString stringWithFormat:@"%@/William Tell Overture Finale.mp3", [[NSBundle mainBundle] resourcePath]];
     
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
@@ -69,13 +72,17 @@
     
     [self.background play];
     
+    
+    // Carrega a imagem de fundo de tela.
     self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"level1Background.png"]];
     [self.backgroundImage setFrame: CGRectMake ( 0.0f, 0.0f, 620.0f, 680.0f)];
     [self.view addSubview: self.backgroundImage];
         
 }
 
+/** Méotdo responsável por retornar a tela inicial do game, desempilhando a view atual **/
 - (IBAction)returnAction:(id)sender {
+    
     [self.navigationController popViewControllerAnimated:YES];
     
     [self.background stop];
@@ -102,9 +109,11 @@
     }
     
     // Imprime o horário após os incrementos realizados.
-    self.watchTimer.text = [NSString stringWithFormat:@"%02i:%02i:%03i", self.minutes, self.seconds, self.mseconds];
+    self.watchTimer.text = [NSString stringWithFormat:@"%02i:%02i:%02i", self.minutes, self.seconds, self.mseconds];
 }
 
+
+/** Método de ação responsável por desabilitar o botão se clicado na ordem correta **/
 - (IBAction)button:(UIButton *)sender {
     
     if(clickable) {
@@ -122,42 +131,16 @@
         }
     }
     
-    // Caso acerte os 25 números, o programa encerra.
+    /* Caso acerte os 25 números, o programa encerra com uma mensagems
+     de aviso da sua pontuação e retorna para a tela inicial. */
     if(counter == 26){
         
         for(UIButton *button in self.buttons)
             [button setHidden:YES];
         
-       
-       // [self.labelNextNumber.hidden = YES];
         [self.countWatchTimer invalidate];
         [self.background stop];
-<<<<<<< HEAD
         
-        
-        UIAlertView *myAlert = [[UIAlertView alloc]
-                                initWithTitle:@"x9 migué"
-                                message:@""
-                                delegate:self
-                                cancelButtonTitle:nil
-                                otherButtonTitles:@"ok", nil];
-        myAlert.cancelButtonIndex = -1;
-        [myAlert setTag:1000];
-        [myAlert show];
-        
-        
-        
-        
-     /*   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ROFL"
-                                                        message:@"Dee dee doo doo."
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:@"return", nil];
-        [alert show]; */
-        
-        
-=======
->>>>>>> f0d72ac422e1005cb4cd164b73f2655960ed8f3a
     }
 }
 
